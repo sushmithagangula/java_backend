@@ -1,5 +1,6 @@
-public class Add2num{
-    public int add(int num1,int num2)
+public class Add2num
+{
+    public int Add(int num1,int num2)
     {
         return num1+num2;
     }

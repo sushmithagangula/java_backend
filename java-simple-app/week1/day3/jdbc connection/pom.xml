@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>jdbc connection</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+    <dependencies>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.8.2</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+    import java.sql.Connection;
+    import java.sql.PreparedStatement;
+    import java.sql.Date;
+    import java.sql.SQLException;
+    import java.sql.*;
+
+    public class DbService {
+
+    @@ -13,15 +10,15 @@ public DbService(Connection connection) {
+    this.connection = connection;
+    }
+
+    // insert query
+    // insert query - saving data to database
+    public int create(int empId, String empNm, Date dob, boolean isManager) throws SQLException {
+    String sql = "insert into emp_info values(?, ? ,? ,?)";
+    PreparedStatement ps = connection.prepareStatement(sql);
+    ps.setInt(1, empId);
+    ps.setString(2, empNm);
+    ps.setDate(3, dob);
+    ps.setBoolean(4, isManager );
+    // above lines create SQL statement
+    // above 5 lines create SQL statement
+
+    int affected = ps.executeUpdate(); // actually firing the query
+    return affected;
+    @@ -37,8 +34,19 @@ public int delete() {
+    return 0;
+    }
+
+    // select query
+    public void find() {
+    // select query - reading the data from database
+    public void find() throws SQLException {
+    String sql = "select * from emp_info";
+    PreparedStatement ps = connection.prepareStatement(sql);
+    ResultSet rs = ps.executeQuery(); // logical representation of physical table
+    while(rs.next()) {
+    int id = rs.getInt("emp_id");
+    String name = rs.getString("emp_name");
+    Date dob = rs.getDate("dob");
+    boolean isManager = rs.getBoolean("is_manager");
+
+    System.out.println(" id : "+id + " name : " + name +" dob : "+dob.toString() +" Manager : "+isManager);
+    }
+    rs.close(); // important to close the result set
+    }
+    }
+
+
+    <build>
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                    <release>11</release>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+
+
+
+</project>

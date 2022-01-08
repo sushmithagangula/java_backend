@@ -1,6 +1,2 @@
-Hi 
-
-docker run --name newmysql -p 33060:33060 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password -d mysql:latest
-
-
-This is my Fifth Program
+hi 
+this is sushmitha

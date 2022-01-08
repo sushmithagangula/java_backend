@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>java-jdbc-connectivity</artifactId>
+    <artifactId>day4</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -13,12 +13,6 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
     <dependencies>
-
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.27</version>
-        </dependency>
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>

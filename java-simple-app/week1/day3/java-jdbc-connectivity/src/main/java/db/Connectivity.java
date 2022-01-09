@@ -1,11 +1,10 @@
-package jb;
+package db;
 
-        import java.sql.Connection;
-        import java.sql.DriverManager;
-        import java.sql.SQLException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
-public class Connection{
-
+public class Connectivity {
     private final Connection connection;
 
     public Connectivity() throws ClassNotFoundException, SQLException {

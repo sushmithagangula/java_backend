@@ -1,6 +1,6 @@
 package factory;
 
-public interface CardProvider {
+public interface CoinProvider {
     void swipe(float amt);
     String getBank();
 }

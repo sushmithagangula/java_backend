@@ -1,0 +1,5 @@
+factory\CardProvider.class
+factory\AbcCard.class
+factory\InvalidBankException.class
+singleton\Car.class
+factory\CoinProvider.class

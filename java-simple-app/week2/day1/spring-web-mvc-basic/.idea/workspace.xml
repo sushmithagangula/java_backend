@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8cf8ea16-65ce-4fe9-a540-91ff68a5394f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../case-study/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../case-study/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../case-study/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../case-study/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../case-study/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../case-study/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../case-study/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../case-study/src/main/java/db/Connectivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../case-study/src/main/java/menu/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../case-study/src/main/java/service/DbService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../case-study/target/classes/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../case-study/target/classes/db/Connectivity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../case-study/target/classes/driver/Driver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../case-study/target/classes/menu/Menu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../case-study/target/classes/service/DbService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../case-study/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../case-study/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../case-study/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day4/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day4/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day4/src/main/java/prll/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day4/src/main/java/prll/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day4/src/main/java/prll/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/main/java/Beans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/main/java/Factory/AbcCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/main/java/Factory/AbcCoin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/main/java/Factory/AppFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/main/java/Factory/Atm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/main/java/Factory/CardFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/main/java/Factory/CardProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/main/java/Factory/CoinFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/main/java/Factory/CoinProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/main/java/Factory/Factory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/main/java/Factory/InvalidBankException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/main/java/Factory/PqrCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/main/java/Factory/XyzCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/main/java/car/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/main/java/driver/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/main/java/tempo/Tempo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/main/resources/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/test/java/AbcCardTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/test/java/AtmTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/test/java/CarSingletonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/test/java/CardFactoryTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/test/java/CardProviderTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/test/java/InvalidExceptionTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/test/java/PqrCarTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/day5/src/test/java/XyzCardTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/week1 - Copy/week1/day4/CURD operations.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/week1 - Copy/week1/day4/parallel-concurrent-programming/parallel-concurrent-programming-main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/week1/day4/CURD operations.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week1/week1/day4/parallel-concurrent-programming/parallel-concurrent-programming-main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-app-annotation-based-AppConfig/src/main/java/com/ani/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-app-annotation-based-AppConfig/src/main/java/com/ani/car/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-app-annotation-based-AppConfig/src/main/java/com/ani/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-app-annotation-based-AppConfig/src/main/java/com/ani/driver/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-app-annotation-based-AppConfig/src/main/resources/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WebContent/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ani/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ani/controller/HelloWorldController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ani/web/WebAppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day 1/pqr.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day2/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day2/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day2/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day2/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day3/java-jdbc-connectivity/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day3/java-jdbc-connectivity/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day3/java-jdbc-connectivity/src/test/java/ConnectivityTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../week1/day3/java-jdbc-connectivity/src/test/java/ConnectivityTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day3/jdbc connection/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../week1/day3/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day4/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day4/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../week1/day4/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day4/CURD operations.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../week1/week1 - Copy/day4/CURD operations.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day4/CURD-Operations/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day4/CURD-Operations/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day4/parallel-concurrent-programming/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day4/parallel-concurrent-programming/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day4/parallel-concurrent-programming/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day4/parallel-concurrent-programming/parallel-concurrent-programming-main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../week1/week1 - Copy/day4/parallel-concurrent-programming/parallel-concurrent-programming-main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day4/parallel-concurrent-programming/parallel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/day5/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../week1/day5/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/days2/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../../week1/days2/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week1/days2/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../../week1/days2/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="23Vp25EpXnBb9sNY1gdBXoBPAsx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8cf8ea16-65ce-4fe9-a540-91ff68a5394f" name="Changes" comment="" />
+      <created>1641828901325</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641828901325</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

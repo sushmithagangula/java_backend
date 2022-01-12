@@ -6,3 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CarCrudRepo extends CrudRepository<Car, Long > { }
+@override
+final

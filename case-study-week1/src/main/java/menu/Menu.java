@@ -44,6 +44,15 @@ public class Menu {
             if(ch == 1) {
                 System.out.println("Enter Account Number : ");
                 int acNum = scanner.nextInt();
+                if(acNum>0)
+                {
+                    int accNum=acNum;
+                }
+                else{
+                    System.out.println("Invalid account Number"+acNum);
+                    System.exit(1);
+
+                }
 
                 System.out.println("Enter Balance : ");
                 double amt = scanner.nextDouble();

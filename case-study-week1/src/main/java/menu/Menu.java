@@ -4,7 +4,6 @@ import db.Connectivity;
 import service.DbService;
 
 import java.sql.Date;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.Scanner;
@@ -12,6 +11,7 @@ import java.util.Scanner;
 public class Menu {
 
     private final DbService service;
+
     public Menu() throws SQLException {
 
         var connectivity = new Connectivity();
@@ -22,28 +22,21 @@ public class Menu {
         String title = "\n --- Banking System ---";
         String m1 = "\n 1. Create New Account";
         String m2 = "\n 2. Show All Accounts";
-        String m3 = "\n 3. Display Balance";
-        String m4 = "\n 4.Transfer Money";
-        String m5 = "\n 5.Withdraw";
-        String m6 = "\n 6.Deposit";
-        String m7 = "\n 7. Exit";
-        return title + m1 + m2 + m3 + m4 + m5 + m6 + m7;
+        String m3 = "\n 3. Exit";
 
+        return title + m1 + m2 + m3;
     }
-    public void showMenu() throws SQLException {
+
+    public void showMenu() {
         var scanner = new Scanner(System.in);
-        while(true) {
+        while (true) {
             System.out.println(prepareMenu());
             int ch = scanner.nextInt();
-            if(ch == 2) {
-                service.printAllAccounts();
-            }
 
-
-             if(ch == 3) System.exit(1);
-            if(ch == 1) {
+            if (ch == 3) System.exit(1);
+            if (ch == 1) {
                 System.out.println("Enter Account Number : ");
-                int acNum=scanner.nextInt();
+                int acNum = scanner.nextInt();
 
                 System.out.println("Enter Balance : ");
                 double amt = scanner.nextDouble();

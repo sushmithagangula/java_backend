@@ -1,16 +1,19 @@
+import BnkDbService.BnkService;
+import menu.Menu;
+import db.BankingConnection;
 import menu.Menu;
 
 import java.sql.SQLException;
 
+import java.sql.Date;
+import java.sql.SQLException;
+import java.time.LocalDate;
+
 public class Main {
+    public static void main(String[] args) throws SQLException, ClassNotFoundException {
 
-    public static void main(String[] args) {
-
-        try {
-            Menu mn = new Menu();
-            mn.showMenu();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        Menu m = new Menu();
+        m.showMenu();
     }
 }
+

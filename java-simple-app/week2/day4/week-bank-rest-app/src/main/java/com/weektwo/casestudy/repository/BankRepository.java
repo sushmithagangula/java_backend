@@ -9,7 +9,7 @@ import java.util.List;
 @Repository
 public interface BankRepository extends JpaRepository<BankAccount, Long> {
 
-    @Modifying // allows firing insert, update and delete queries
+   // @Modifying// allows firing insert, update and delete queries
     // withdraw logic below is wrongly implemented, you need to deduct given amount from existing amount
     // and set resulting amount as balance.
 

@@ -3,6 +3,7 @@ package com.ani.sonar.domain;
         import org.junit.jupiter.api.Assertions;
         import org.junit.jupiter.api.DisplayName;
         import org.junit.jupiter.api.Test;
+        import org.springframework.boot.test.context.SpringBootTest;
 
 class MsgTests {
 
@@ -15,5 +16,15 @@ class MsgTests {
 
         Assertions.assertNotNull(msg);
         Assertions.assertEquals("abc", msg.getMobile());
+    }
+
+    @SpringBootTest
+    static
+    class CodeQualityApplicationTests {
+
+        @Test
+        void contextLoads() {
+        }
+
     }
 }

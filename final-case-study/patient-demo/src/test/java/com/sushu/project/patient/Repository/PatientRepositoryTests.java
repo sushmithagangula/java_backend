@@ -4,6 +4,7 @@ package com.sushu.project.patient.Repository;
 
         import com.sushu.project.patient.domain.Patient;
         import com.sushu.project.patient.dto.PatientDto;
+        import com.sushu.project.patient.repository.PatientRepository;
         import org.junit.jupiter.api.DisplayName;
         import org.junit.jupiter.api.Test;
         import org.junit.jupiter.api.extension.ExtendWith;
@@ -21,18 +22,19 @@ package com.sushu.project.patient.Repository;
 public class PatientRepositoryTests {
 
     @Autowired
-    private PatientDto repository;
+    private PatientRepository repository;
 
     @DisplayName("Patient Repo : Creating Patient")
     @Test
-    public void testCreateAbc() {
+    public void testCreatePatient() {
 
-        var abc = new Patient();
-        abc.setId(565L);
-        abc.setName("abc");
-        abc.setNum(56);
-        abc.setDt(Date.valueOf(LocalDate.now()));
-       // repository.save(abc);
+        var patient = new Patient();
+        patient.setId(565L);
+        patient.setName("abc");
+        patient.setNum(56);
+        patient.setDt(LocalDate.now());
+
+      repository.save(patient);
 
     }
 }

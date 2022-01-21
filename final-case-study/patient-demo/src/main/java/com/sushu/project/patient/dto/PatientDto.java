@@ -1,13 +1,13 @@
 package com.sushu.project.patient.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.cglib.core.Local;
 
+import java.sql.Date;
+import java.time.LocalDate;
 
-       import lombok.AllArgsConstructor;
-        import lombok.Data;
-        import lombok.Getter;
-        import lombok.Setter;
-
-        import java.sql.Date;
 
 @AllArgsConstructor
 @Setter
@@ -15,6 +15,7 @@ package com.sushu.project.patient.dto;
 public class PatientDto {
     private Long id;
     private String name;
-    private Date dt;
+    private LocalDate dt;
     private Integer num;
+
 }

@@ -22,11 +22,6 @@ public interface PatientRepository extends JpaRepository<Patient,Long> {
     @Modifying // allows firing insert, update and delete queries
     @Query(value = "delete from patient where id = :id", nativeQuery = true)
     void deletePatient(@Param("id") int id);
-   // @Query(value = "SELECT * FROM Patient WHERE status = ?1", nativeQuery = true)
-   // void allActivePatient(@Param("status") boolean status);
-   // List<Patient> existsById(boolean status);
-    //List<Patient> findByAgeBetween(int startAge, int endAge);
-
 
 }
 

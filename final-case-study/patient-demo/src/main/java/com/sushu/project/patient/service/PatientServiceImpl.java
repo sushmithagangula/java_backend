@@ -7,7 +7,9 @@ import com.sushu.project.patient.repository.PatientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 
+@Transactional
 @Service
 public class PatientServiceImpl implements PatientService {
 

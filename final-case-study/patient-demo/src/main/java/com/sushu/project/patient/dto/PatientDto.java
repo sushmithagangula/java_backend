@@ -1,21 +1,26 @@
 package com.sushu.project.patient.dto;
 
+
+
+import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.cglib.core.Local;
-
-import java.sql.Date;
 import java.time.LocalDate;
-
-
 @AllArgsConstructor
 @Setter
 @Getter
 public class PatientDto {
-    private Long id;
+    private int id;
+    @NotNull
     private String name;
-    private LocalDate dt;
-    private Integer num;
-
+    private long mobile;
+    @NotNull
+    private int age;
+    @NotNull
+    private Boolean status;
+    private LocalDate lastVisited;
 }
+
+
+

@@ -1,13 +1,12 @@
 package com.sushu.project.patient.domain;
 
 
-        import lombok.Data;
-        import lombok.Getter;
-        import lombok.Setter;
+import lombok.Getter;
+import lombok.Setter;
 
-        import javax.persistence.*;
-        import java.sql.Date;
-        import java.time.LocalDate;
+import javax.persistence.*;
+
+import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -16,22 +15,14 @@ public class Patient {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-
-    @Column(unique = true, nullable = false)
+    private int id;
     private String name;
-
-    @Column(unique = false, nullable = true)
-    private Integer Num;
-
-    @Column(unique = false, nullable = false)
-    private LocalDate dt;
-
-    @Column(unique = false, nullable = false)
+    private Long mobile;
+    private Integer age;
     private boolean status;
+    private LocalDate lastVisited;
 
-    @Column(unique = false, nullable = false)
-    private Date lastVisited;
+}
 
 
-    }
+

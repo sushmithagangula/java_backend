@@ -8,6 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import javax.validation.constraints.NotBlank;
+import java.util.ArrayList;
+import java.util.List;
 
 @Transactional
 @Service
@@ -50,6 +53,30 @@ public class PatientServiceImpl implements PatientService {
     public void deletePatient(int id) {
         repository.deletePatient(id);
     }
-}
 
 
+    @Override
+    public List<PatientDto> listAllRegisteredPatient() {
+
+        List<Patient> patients = repository.findAll();
+
+        List<PatientDto>  dtos= new ArrayList<>();
+        for (int i = 0; i < listAllRegisteredPatient().size(); i++) {
+
+            Patient patient= patients.get(i);
+            PatientDto dto = new PatientDto(
+                    patient.getId(),
+                    patient.getName(),
+                    patient.getMobile(),
+                    patient.getAge(),
+                    patient.isStatus(),
+                    patient.getLastVisited()
+
+            );
+             dtos.add(dto);
+           }
+         return dtos;
+        }
+
+
+    }

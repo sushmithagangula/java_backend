@@ -12,5 +12,5 @@ public interface PatientService {
         public PatientDto registerPatient(PatientDto dto);
         public PatientDto updatePatientInformation(PatientDto dto);
         public void deletePatient(int id);
-
+        public List<PatientDto> listAllRegisteredPatient();
     }

@@ -20,7 +20,7 @@ public class PatientDto {
     @NotNull
     private int age;
     @NotNull
-    @NotBlank
+
     private Boolean status;
     private LocalDate lastVisited;
 }

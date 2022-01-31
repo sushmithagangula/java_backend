@@ -17,7 +17,7 @@ private PatientRepository repository;
 
     @Test
     void testSize() {
-        var abc = new Patient();
-        Assertions.assertNotNull(abc);
+        var patient = new Patient();
+        Assertions.assertNotNull(patient);
     }
 }

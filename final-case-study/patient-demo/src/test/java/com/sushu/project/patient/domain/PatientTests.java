@@ -8,8 +8,8 @@ public class PatientTests {
     @DisplayName("Domain : Checking Object Creation")
     @Test
     void testObjectCreation() {
-        var abc = new Patient();
-        Assertions.assertNotNull(abc);
+        var patient = new Patient();
+        Assertions.assertNotNull(patient);
     }
 }
 

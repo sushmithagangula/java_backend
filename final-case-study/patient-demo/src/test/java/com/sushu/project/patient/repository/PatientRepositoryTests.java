@@ -23,13 +23,11 @@ private PatientRepository repository;
     @Test
     public void testcreatePatientRegistration(){
 
-        var abc = new Patient();
-       // abc.setId(565L);
-        abc.setName("abc");
-      //  abc.setNum("41343");
-        abc.setLastVisited(LocalDate.now());
-
-        repository.save(abc);
+        var patient = new Patient();
+       patient.setId(56);
+        patient.setName("abc");
+        patient.setLastVisited(LocalDate.now());
+        repository.save(patient);
 
     }
 

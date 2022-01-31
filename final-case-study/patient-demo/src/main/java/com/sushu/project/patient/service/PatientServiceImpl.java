@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,6 +55,32 @@ public class PatientServiceImpl implements PatientService {
     public void deletePatient(int id) {
         repository.deletePatient(id);
     }
+    @Override
+    public List<Patient> findAllPatient() {
+        return repository.findAll();
+    }
+
+    // @Override
+   // public List<Patient> findAllRegisteredPatient(PatientDto dto) {
+
+       // var patient4 = new Patient();
+        //patient4.setId(dto.getId());
+        //patient4.setName(dto.getName());
+        //patient4.setMobile(dto.getMobile());
+        //patient4.setAge(dto.getAge());
+        //patient4.setStatus(dto.getStatus());
+        //patient4.setLastVisited(dto.getLastVisited());
+        //repository.findAll();
+    //}
 
 
+    //@Override
+       //public PatientDto findMobileNumber,findName(PatientDto dto)
+
+    //{
+       // var patient9 = new Patient();
+      //  patient9.setLastVisited(findMobileNumber.getLastVisited());
+       // patient9.setLastVisited(findName.getLastVisited());
+        //repository.save(patient9);
+  //  }
 }

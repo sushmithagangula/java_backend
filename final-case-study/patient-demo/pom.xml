@@ -8,7 +8,7 @@
 		<version>2.6.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ani.project</groupId>
+	<groupId>com.sushu.project.patient</groupId>
 	<artifactId>project-module</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>project-module</name>

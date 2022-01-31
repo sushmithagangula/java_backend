@@ -54,7 +54,8 @@ public class PatientController
         response.setBody(1);
         return ResponseEntity.ok(response);
     }
-
-
-
+    @GetMapping("/show")
+    public List<Patient> findAllPatient() {
+        return service.findAllPatient();
     }
+}

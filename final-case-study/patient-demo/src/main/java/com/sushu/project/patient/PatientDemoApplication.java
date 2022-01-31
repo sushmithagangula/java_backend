@@ -10,5 +10,4 @@ public class PatientDemoApplication {
     {
         SpringApplication.run(PatientDemoApplication.class, args);
     }
-
 }

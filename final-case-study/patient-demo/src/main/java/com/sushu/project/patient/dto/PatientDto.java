@@ -6,8 +6,6 @@ import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-
-import javax.validation.constraints.NotBlank;
 import java.time.LocalDate;
 @AllArgsConstructor
 @Setter
@@ -20,7 +18,6 @@ public class PatientDto {
     @NotNull
     private int age;
     @NotNull
-
     private Boolean status;
     private LocalDate lastVisited;
 }

@@ -17,14 +17,14 @@ import java.util.List;
 
 
 @RequestMapping("/pt")
-        @RestController
-        public class PatientController {
+@RestController
+public class PatientController
+{
     @Autowired
     private PatientService service;
 
     @PostMapping("/pt")
     public ResponseEntity<AppResponse<PatientDto>> registerPatient(@Valid @RequestBody PatientDto dto) {
-
         var svObj = service.registerPatient(dto);
         var response = new AppResponse<PatientDto>();
         response.setStatus("success");
@@ -44,7 +44,6 @@ import java.util.List;
         return ResponseEntity.ok(response);
     }
 
-
     @DeleteMapping("/{id}")
     public ResponseEntity<AppResponse<Integer>> deletePatient(@PathVariable int id) throws InvalidPatientException {
 
@@ -56,16 +55,6 @@ import java.util.List;
         return ResponseEntity.ok(response);
     }
 
-    @GetMapping("/{stats}")
-    public ResponseEntity<AppResponse<List>> listAllRegisteredPatient(@PathVariable boolean stats) throws UnsatisfiedDependencyException {
 
 
-            service.listAllRegisteredPatient();
-            var response = new AppResponse<List>();
-            response.setStatus("success");
-            response.setMessage(" listAllRegisteredPatient");
-            response.setBody(service.listAllRegisteredPatient());
-            return ResponseEntity.ok(response);
-        }
-
-}
+    }

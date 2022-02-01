@@ -2,15 +2,18 @@ package com.sushu.project.patient.controller;
 
 import com.sushu.project.patient.domain.Patient;
 import com.sushu.project.patient.dto.AppResponse;
+import com.sushu.project.patient.dto.MobileAndNameDto;
 import com.sushu.project.patient.dto.PatientDto;
 import com.sushu.project.patient.exception.InvalidPatientException;
 import com.sushu.project.patient.exception.PatientNotFoundException;
 import com.sushu.project.patient.service.PatientService;
 import org.springframework.beans.factory.UnsatisfiedDependencyException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.security.auth.login.AccountNotFoundException;
 import javax.validation.Valid;
 import java.time.LocalDate;
 import java.util.List;
@@ -24,7 +27,7 @@ public class PatientController
     private PatientService service;
 
     @PostMapping("/pt")
-    public ResponseEntity<AppResponse<PatientDto>> registerPatient(@Valid @RequestBody PatientDto dto) {
+    public ResponseEntity<AppResponse<PatientDto>> registerPatient(@Valid @RequestBody PatientDto dto)  {
         var svObj = service.registerPatient(dto);
         var response = new AppResponse<PatientDto>();
         response.setStatus("success");
@@ -55,7 +58,17 @@ public class PatientController
         return ResponseEntity.ok(response);
     }
     @GetMapping("/show")
-    public List<Patient> findAllPatient() {
+    public List<Patient> findAllPatient() throws AccountNotFoundException {
         return service.findAllPatient();
     }
+    @GetMapping("/today")
+    public ResponseEntity<AppResponse<List<MobileAndNameDto>>> searchMobileAndName() {
+        var patientMobAndName = service.findMobileAndNameVisitedToday();
+        var response = new AppResponse<List<MobileAndNameDto>>();
+        response.setStatus("success");
+        response.setMessage("patient mobile and name");
+        response.setBody(patientMobAndName);
+        return ResponseEntity.ok(response);
+    }
+
 }

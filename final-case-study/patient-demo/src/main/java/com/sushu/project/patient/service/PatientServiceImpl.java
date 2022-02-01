@@ -2,10 +2,12 @@ package com.sushu.project.patient.service;
 
 
 import com.sushu.project.patient.domain.Patient;
+import com.sushu.project.patient.dto.MobileAndNameDto;
 import com.sushu.project.patient.dto.PatientDto;
 import com.sushu.project.patient.repository.PatientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.transaction.Transactional;
 
@@ -59,18 +61,29 @@ public class PatientServiceImpl implements PatientService {
     public List<Patient> findAllPatient() {
         return repository.findAll();
     }
+    @Override
+    public List<MobileAndNameDto> findMobileAndNameVisitedToday() {
+        LocalDate dt = LocalDate.now();
+        List<Patient> patients = repository.findBylastVisited(dt);
 
-    // @Override
-   // public List<Patient> findAllRegisteredPatient(PatientDto dto) {
+        List<MobileAndNameDto> patientDtos = new ArrayList<>();
 
-       // var patient4 = new Patient();
-        //patient4.setId(dto.getId());
-        //patient4.setName(dto.getName());
-        //patient4.setMobile(dto.getMobile());
-        //patient4.setAge(dto.getAge());
-        //patient4.setStatus(dto.getStatus());
-        //patient4.setLastVisited(dto.getLastVisited());
-        //repository.findAll();
+        for(int i=0;i<patients.size();i++) {
+            Patient patient1 = patients.get(i);
+            MobileAndNameDto dto = new MobileAndNameDto();
+            dto.setMobile(patient1.getMobile());
+            dto.setName(patient1.getName());
+
+            patientDtos.add(dto);
+        }
+        return patientDtos;
+    }
+   // @Override
+    //public List<Patient> searchpatientName,MObileNumberByDt(String s) {
+
+      //  List<Patient> list=repository.findpatientName,MObileNumberByDt(s);
+
+      //  return list;
     //}
 
 

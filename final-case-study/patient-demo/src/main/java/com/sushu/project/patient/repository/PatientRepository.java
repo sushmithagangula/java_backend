@@ -8,6 +8,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.time.LocalDate;
 import java.util.List;
 
 
@@ -24,5 +25,6 @@ public interface PatientRepository extends JpaRepository<Patient,Long> {
     @Query(value = "delete from patient where id = :id", nativeQuery = true)
     void deletePatient(@Param("id") int id);
     List<Patient> findAll();
+    public List<Patient> findBylastVisited(LocalDate dt);
     }
 

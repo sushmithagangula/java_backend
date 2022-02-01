@@ -10,6 +10,7 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.AutoConfigureDataJpa;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
+
 import java.time.LocalDate;
 @ExtendWith(SpringExtension.class)
 @DataJpaTest
@@ -24,7 +25,7 @@ private PatientRepository repository;
     public void testcreatePatientRegistration(){
 
         var patient = new Patient();
-       patient.setId(56);
+        patient.setId(56);
         patient.setName("abc");
         patient.setLastVisited(LocalDate.now());
         repository.save(patient);

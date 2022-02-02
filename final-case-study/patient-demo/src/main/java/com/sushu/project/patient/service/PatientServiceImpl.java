@@ -78,22 +78,5 @@ public class PatientServiceImpl implements PatientService {
         }
         return patientDtos;
     }
-   // @Override
-    //public List<Patient> searchpatientName,MObileNumberByDt(String s) {
 
-      //  List<Patient> list=repository.findpatientName,MObileNumberByDt(s);
-
-      //  return list;
-    //}
-
-
-    //@Override
-       //public PatientDto findMobileNumber,findName(PatientDto dto)
-
-    //{
-       // var patient9 = new Patient();
-      //  patient9.setLastVisited(findMobileNumber.getLastVisited());
-       // patient9.setLastVisited(findName.getLastVisited());
-        //repository.save(patient9);
-  //  }
 }

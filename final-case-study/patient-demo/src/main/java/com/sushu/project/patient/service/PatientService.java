@@ -16,5 +16,5 @@ public interface PatientService {
          List<Patient> findAllPatient();
          List<MobileAndNameDto> findMobileAndNameVisitedToday();
 
-    // List<Patient> searchpatientName,MobileNumberByDt();
+
     }

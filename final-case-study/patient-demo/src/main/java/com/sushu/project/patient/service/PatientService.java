@@ -13,8 +13,9 @@ public interface PatientService {
         public PatientDto registerPatient(PatientDto dto);
         public PatientDto updatePatientInformation(PatientDto dto);
         public void deletePatient(int id);
-         List<Patient> findAllPatient();
-         List<MobileAndNameDto> findMobileAndNameVisitedToday();
+    List<Patient> findAllPatient();
+    List<MobileAndNameDto> findMobileAndNameVisitedToday();
 
 
-    }
+
+}

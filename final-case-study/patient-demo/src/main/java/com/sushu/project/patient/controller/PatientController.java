@@ -57,10 +57,12 @@ public class PatientController
         response.setBody(1);
         return ResponseEntity.ok(response);
     }
-    @GetMapping("/show")
+  @GetMapping("/show")
     public List<Patient> findAllPatient() throws AccountNotFoundException {
-        return service.findAllPatient();
-    }
+    return service.findAllPatient();
+   }
+
+
     @GetMapping("/today")
     public ResponseEntity<AppResponse<List<MobileAndNameDto>>> searchMobileAndName() {
         var patientMobAndName = service.findMobileAndNameVisitedToday();
@@ -69,6 +71,7 @@ public class PatientController
         response.setMessage("patient mobile and name");
         response.setBody(patientMobAndName);
         return ResponseEntity.ok(response);
+
     }
 
 

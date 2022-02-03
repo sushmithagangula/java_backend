@@ -1,4 +1,4 @@
-package com.sushu.project.patient;
+﻿package com.sushu.project.patient;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -77,6 +77,7 @@ public class PatientServiceImpl implements PatientService {
             patientDtos.add(dto);
         }
         return patientDtos;
+
     }
 
 }

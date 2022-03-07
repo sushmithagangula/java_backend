@@ -4,8 +4,11 @@ package com.sushu.project.patient.service;
 import com.sushu.project.patient.domain.Patient;
 import com.sushu.project.patient.dto.MobileAndNameDto;
 import com.sushu.project.patient.dto.PatientDto;
+import com.sushu.project.patient.exception.DuplicateException;
+import com.sushu.project.patient.exception.PatientNotFoundException;
 import com.sushu.project.patient.repository.PatientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -14,6 +17,7 @@ import javax.transaction.Transactional;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Transactional
 @Service
@@ -38,19 +42,24 @@ public class PatientServiceImpl implements PatientService {
     }
 
 
-    @Override
-    public PatientDto updatePatientInformation(PatientDto dto) {
 
-        Patient pa = new Patient();
-        pa.setId(dto.getId());
-        pa.setName(dto.getName());
-        pa.setMobile(dto.getMobile());
-        pa.setAge(dto.getAge());
-        pa.setStatus(dto.getStatus());
-        pa.setLastVisited(dto.getLastVisited());
-        Patient update = repository.save(pa);
-        return new PatientDto(update.getId(), update.getName(), update.getMobile(), update.getAge(), update.isStatus(), update.getLastVisited());
-    }
+   @Override
+    public PatientDto updatePatientInformation(PatientDto dto) throws PatientNotFoundException {
+
+
+           Patient pa = new Patient();
+           pa.setId(dto.getId());
+           pa.setName(dto.getName());
+           pa.setMobile(dto.getMobile());
+           pa.setAge(dto.getAge());
+           pa.setStatus(dto.getStatus());
+           pa.setLastVisited(dto.getLastVisited());
+           Patient update = repository.save(pa);
+           return new PatientDto(update.getId(), update.getName(), update.getMobile(), update.getAge(), update.isStatus(), update.getLastVisited());
+       }
+
+
+
 
 
     @Override
